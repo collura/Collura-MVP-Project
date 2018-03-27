@@ -6,6 +6,9 @@ import org.greenrobot.eventbus.EventBus;
 import example.collura.mvpstudy.mvp.data.model.eventbus.NetworkResponse;
 import example.collura.mvpstudy.mvp.data.model.eventbus.PreferencesResponse;
 
+/* Esta classe implementa a interface DataManager a qual herda todos os metodos
+// de todas as classes Model de cada view, metodos de request e callback
+// evitando ter que implementar manualmente. */
 public class AppDataManager implements DataManager {
 
     private final static AppDataManager instance = new AppDataManager();
