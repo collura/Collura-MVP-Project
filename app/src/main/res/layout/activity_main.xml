@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.collura.colluramvp.mvp.mainactivity.AppMainActivity">
+    tools:context="example.collura.mvpstudy.mvp.mainactivity.AppMainActivity">
 
     <Button
         android:id="@+id/call_second_activity"

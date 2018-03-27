@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="example.collura.colluramvp">
+    package="example.collura.mvpstudy">
+
 
     <application
         android:allowBackup="true"
@@ -9,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mvp.mainactivity.AppMainActivity"
+
+        <activity android:name="example.collura.mvpstudy.mvp.mainactivity.AppMainActivity"
             android:label="Main Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,8 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".mvp.secondactivity.AppSecondActivity"
-            android:label="Second Activity"/>
+        <activity android:name="example.collura.mvpstudy.mvp.secondactivity.AppSecondActivity"
+            android:label="Second Activity"
+            android:parentActivityName="example.collura.mvpstudy.mvp.mainactivity.AppMainActivity"/>
     </application>
 
 </manifest>
