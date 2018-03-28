@@ -14,7 +14,8 @@ class AppSecondActivityPresenter extends BasePresenter<AppSecondActivity> implem
 
     public AppSecondActivityPresenter (AppSecondActivity view) {
         super (view);
-        model = new AppSecondActivityModel (  this, view );
+        model = new AppSecondActivityModel (  this );
+        view.showToast ( "Second Activity" );
     }
 
     @Override

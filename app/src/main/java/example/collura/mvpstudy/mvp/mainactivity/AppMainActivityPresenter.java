@@ -11,7 +11,8 @@ class AppMainActivityPresenter extends BasePresenter<AppMainActivity> implements
 
     public AppMainActivityPresenter (AppMainActivity view) {
         super (view);
-        model = new AppMainActivityModel ( this, view );
+        model = new AppMainActivityModel ( this );
+        view.showToast ( "Main Activity" );
     }
 
     @Override

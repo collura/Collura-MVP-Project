@@ -1,7 +1,5 @@
 package example.collura.mvpstudy.mvp.secondactivity;
 
-import android.app.Activity;
-
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
@@ -17,8 +15,9 @@ class AppSecondActivityModel extends BaseModel<AppSecondActivityPresenter>
 implements SecondActivityModel, SecondActivityModel.Db,
 SecondActivityModel.Network, SecondActivityModel.Preferences{
 
-    public AppSecondActivityModel (AppSecondActivityPresenter presenter, Activity view) {
-        super (presenter, view);
+    public AppSecondActivityModel (AppSecondActivityPresenter presenter) {
+        super (presenter);
+
         if ( !EventBus.getDefault ().isRegistered ( this ) )
              EventBus.getDefault ().register ( this );
     }

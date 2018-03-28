@@ -1,8 +1,6 @@
 package example.collura.mvpstudy.mvp.mainactivity;
 
 
-import android.app.Activity;
-
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
@@ -15,8 +13,8 @@ class AppMainActivityModel
         implements MainActivityModel, MainActivityModel.Db
         , MainActivityModel.Network, MainActivityModel.Preferences{
 
-    AppMainActivityModel (AppMainActivityPresenter presenter, Activity view) {
-        super (presenter, view);
+    AppMainActivityModel (AppMainActivityPresenter presenter ) {
+        super (presenter );
         if ( !EventBus.getDefault ().isRegistered ( this ) )
              EventBus.getDefault ().register ( this );
     }

@@ -3,6 +3,7 @@ package example.collura.mvpstudy.mvp.mainactivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -70,5 +71,30 @@ public class AppMainActivity
     protected void onDestroy () {
         super.onDestroy ();
        presenter.unregisterModel ();
+    }
+
+    @Override
+    protected void showToast (String msg) {
+        Toast.makeText (this, msg, Toast.LENGTH_SHORT).show ();
+    }
+
+    @Override
+    protected void showSnackBar (String msg) {
+
+    }
+
+    @Override
+    protected void showProgressBar (String msg) {
+
+    }
+
+    @Override
+    protected void dismissProgressBar () {
+
+    }
+
+    @Override
+    protected void dismissSnackBar () {
+
     }
 }
