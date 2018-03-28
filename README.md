@@ -3,4 +3,4 @@ A simple project where I design my own MVP structure after some research about i
 
 ## Diagram
 
-![Screenshot](diagram.jpg)
+![Screenshot](diagram/diagram.jpg)
