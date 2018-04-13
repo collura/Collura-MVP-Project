@@ -10,8 +10,7 @@ import example.collura.mvpstudy.mvp.data.model.eventbus.PreferencesResponse;
 
 class AppMainActivityModel
         extends BaseModel<AppMainActivityPresenter>
-        implements MainActivityModel, MainActivityModel.Db
-        , MainActivityModel.Network, MainActivityModel.Preferences{
+        implements MainActivityModel {
 
     AppMainActivityModel (AppMainActivityPresenter presenter ) {
         super (presenter );

@@ -12,8 +12,7 @@ import example.collura.mvpstudy.mvp.data.model.eventbus.PreferencesResponse;
  */
 
 class AppSecondActivityModel extends BaseModel<AppSecondActivityPresenter>
-implements SecondActivityModel, SecondActivityModel.Db,
-SecondActivityModel.Network, SecondActivityModel.Preferences{
+implements SecondActivityModel{
 
     public AppSecondActivityModel (AppSecondActivityPresenter presenter) {
         super (presenter);

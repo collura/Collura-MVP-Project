@@ -9,22 +9,8 @@ package example.collura.mvpstudy.mvp.mainactivity;
 
 public interface MainActivityModel {
     void onMessageEvent(  Object event );
-
-
-    // Responsavel por métodos de rede.
-    interface Network{
-        void getNetworkdata();
-        void networkDataCallback( String data );
-    }
-
-    // responsável por métodos de SQlite
-    interface Db{
-
-    }
-
-    //Responsável por métodos de SharedPreferences
-    interface Preferences{
-        void getPreferencesdata();
-        void preferencesDataCallback( String data );
-    }
+    void getNetworkdata();
+    void networkDataCallback( String data );
+    void getPreferencesdata();
+    void preferencesDataCallback( String data );
 }
