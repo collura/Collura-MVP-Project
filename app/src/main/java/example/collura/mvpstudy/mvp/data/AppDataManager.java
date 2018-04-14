@@ -8,6 +8,8 @@ import example.collura.mvpstudy.mvp.data.model.eventbus.PreferencesResponse;
 
 // Esta classe implementa a interface DataManager, a qual herda todos os metodos
 // de todas as interfaces das classes Helper
+// O Callback é realizado através de BroadCasts, utilizando o framework EventBus
+// link: https://github.com/greenrobot/EventBus
 
 public class AppDataManager implements DataManager {
 
